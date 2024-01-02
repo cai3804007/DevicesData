@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- 第一排 -->
+    <EditText
+        android:id="@+id/editTextTop1"
+        android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:hint="请输入网站地址"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonTop1"
+        android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="加载地址"
+    android:textSize="16sp"
+        android:onClick="btn1Click"
+    app:layout_constraintStart_toEndOf="@+id/editTextTop1"
+    app:layout_constraintTop_toTopOf="@+id/editTextTop1"/>
+
+    <!-- 第二排 -->
+    <EditText
+        android:id="@+id/editTextTop2"
+        android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:hint="请输入设备地址"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextTop1"/>
+
+    <Button
+        android:id="@+id/buttonTop2"
+        android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:text="连接设备"
+    android:textSize="16sp"
+        android:onClick="btn2Click"
+    app:layout_constraintStart_toEndOf="@+id/editTextTop2"
+    app:layout_constraintTop_toTopOf="@+id/editTextTop2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
